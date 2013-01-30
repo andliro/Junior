@@ -1,0 +1,193 @@
+﻿/*Horizontal Orientation CSS*/
+.jscarousal-horizontal        /*fondo contenedor*/
+{
+/* 	width: 740px; */
+	width: 100%;
+	height: 218px;
+	background-color: #121212;
+	border: solid 1px #7A7677;
+	padding: 20px 0px 20px 0px;
+	/* margin-top: 20px; */	
+	margin-left: 1px;
+	margin-right: 1px;
+	/* position: relative; overflow: hidden; */
+
+} 
+/*alineacion barras verticales(donde estan las flechas)*/
+
+.jscarousal-horizontal-back, .jscarousal-horizontal-forward   
+{  		/* alineacion barras verticales(donde estan las flechas) */
+
+	float: left;
+	width: 23px;
+	height: 198px;
+	background-color: #121212;
+	color: white;
+	position: relative;
+	top: 6px;
+	cursor: pointer;	
+} 
+
+.jscarousal-horizontal-back
+{     /* flecha izquierdo */
+
+	background-image: url(img/left_arrow.jpg);
+	background-repeat: no-repeat;
+	background-position: left;
+}
+
+.jscarousal-horizontal-forward{
+/*{     flecha derecho*/
+	background-image: url(img/right_arrow.jpg);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+
+.jscarousal-contents-horizontal
+{      /*contenedor de imagenes y texto*/
+	/* width: 690px;
+	height: 224px; */
+	width: 90%;
+	height: 220px;	
+	float: left;
+	position: relative;
+	overflow: hidden;
+	margin-left: 5px;
+	/* background: yellow; */
+}
+.jscarousal-contents-horizontal > div
+{      
+	position: absolute;
+	width: 100%;
+	height: 220px;
+	/* background: blue; */
+}
+.jscarousal-contents-horizontal > div > div
+{	   /*espacio entre imagenes*/
+	float: left;
+	margin-left: 8px;
+	/* margin-right: 8px; */
+	width: 8px;
+	height: 220px;	
+	/* background: green; */
+} 
+.jscarousal-contents-horizontal img
+{	   /*tamaño imagen*/
+	width: 95%;
+	height: 142px;
+	border: solid 1px #7A7677;
+}
+
+/*Horizontal Orientation CSS Ends*/
+/* 
+Vertical Orientation CSS Starts
+.jscarousal-vertical
+{
+	width: 140px;
+	height: 460px;
+	background-color: #121212;
+	border: solid 1px #7A7677;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	overflow: hidden;
+}
+.jscarousal-vertical-back, .jscarousal-vertical-forward
+{
+	width: 100%;
+	height: 30px;
+	background-color: #121212;
+	color: White;
+	position: relative;
+	cursor: pointer;
+	z-index:100;
+}
+.jscarousal-vertical-back
+{
+	background-image: url(img/top_arrow.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+.jscarousal-vertical-forward
+{
+	background-image: url(img/bottom_arrow.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.jscarousal-contents-vertical
+{
+	overflow: hidden;
+	width: 140px;
+	height: 410px;
+}
+.jscarousal-contents-vertical > div
+{
+	position: absolute;
+	top: 40px;
+	width: 100%;
+	height: 820px;
+	overflow: hidden;
+}
+.jscarousal-contents-vertical > div > div
+{
+	width: 140px;
+	height: 125px;
+	margin: 8px;
+	margin-left: 14px;
+}
+.jscarousal-contents-vertical > div > div span
+{
+	display: block;
+	width: 70%;
+	text-align: center;
+}
+.jscarousal-contents-vertical img
+{
+	width: 110px;
+	height: 80px;
+	border: solid 1px #7A7677;
+}
+Vertical Orientation CSS Ends */
+
+/*Common*/
+.hidden
+{
+	display: none;
+}
+.visible
+{
+	display: block;
+}
+.thumbnail-active
+{
+	filter: alpha(opacity=100);
+	opacity: 1.0;
+	cursor: pointer;
+}
+.thumbnail-inactive
+{
+	filter: alpha(opacity=20);
+	opacity: 0.2;
+	cursor: pointer;
+}
+.thumbnail-text
+{		/*diseño del texto*/
+	color: #7A7677;
+	font-weight: bold;
+	text-align: left;
+ 	display:block; 
+	padding: 5px 2px 2px 10px;	
+	width: 80%;
+	height: 40px;		
+}
+.thumbnail-titulo
+{		/*diseño del titulo*/
+	color: #7A7677;
+	font-weight: bold;	
+	display:block;	
+	font-size: 25px;	
+	text-align: center;
+	width: auto;
+	height: 25px;	
+}

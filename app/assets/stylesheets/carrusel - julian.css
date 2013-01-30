@@ -1,0 +1,42 @@
+/* --------------------DISEÑO INDEX-------------------- */
+.carousel .item {
+    background-color: #000;
+}
+
+.ferro{
+	margin-top: 20px;
+	/* background: red; 	*/
+	/* border: 2px solid; */
+}
+
+.carrusel_publicidad{	
+	background-color: #fff;
+	/*border: 1px blue solid;	*/
+	width: 100%;
+	/*height: 100%;*/
+}
+
+.mas_contenido{
+	margin-top: 20px;
+	padding-top: 50px;
+	/* font-size: 80px; */
+	text-align: center;
+	width: 100%;
+	height: 900px;		
+	/*border: 2px solid;*/
+}
+/* 
+.mas_contenido h1{
+	font-size: 100px;
+}
+
+.mas_contenido p{
+	font-size: 80px;
+	margin-top: 50px;
+	margin-bottom: 80px;
+}
+ */
+ /*.span10{
+
+ 	border: 1px red solid;
+ }*/

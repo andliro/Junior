@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Junior</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+
+  <script type="text/javascript">
+        $(document).ready(function() {
+            $('#carouselh').jsCarousel({ onthumbnailclick: function(src) { alert(src); }, autoscroll: true, circular: true, masked: false, itemstodisplay: 4, orientation: 'h' });
+        });               
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#micarouselh').jsCarousel({ onthumbnailclick: function(src) { alert(src); }, autoscroll: true, circular: true, masked: false, itemstodisplay: 4, orientation: 'h' });
+        });               
+    </script>
+    
+</head>
+<body>
+<div class="header">
+		<div class="navbar navbar-fixed-top">
+		    <div class="navbar-inner">	    	
+	        	<div class="container-fluid	">
+			 	  <div class="row-fluid">
+			   	    <div class="span12">
+					  <div class="row-fluid">
+						<div class="span6">
+	       		    		<a class="brand" href="#">JUNIOR</a>					
+						</div>
+						<div class="span6">
+			   	            <form class="navbar-form pull-right">
+		   	            		<input type="text" id="busca" placeholder="Que buscas?">
+	   	            			<button type="submit" class="btn">Submit</button>
+							</form>					    			
+						</div>
+						<!--div class="span3">
+							<ul class="nav pull-right">
+								<li class="divider-vertical"></li>
+					    	   	<li><a href="#">Ingresar</a></li>        	
+					        	<li class="divider-vertical"></li>
+					        	<li><a href="#">Registrarse</a></li>
+					        	<li class="divider-vertical"></li>
+						    </ul>													
+						</div-->				  
+					  </div>				  
+					</div>				  
+				  </div>				  
+		 	    </div>
+		    </div>
+		</div>
+	</div>
+
+	<div class="contenido">
+
+		<div class="container-fluid">
+
+
+			<div class="row-fluid">			
+				<div class="span12">
+
+					<!-- MENU ACORDEON -->
+					<div class="span2">
+				     	<div class="accordion" id="accordion2">  
+				            <div class="accordion-group">  
+					            <div class="accordion-heading">  
+						                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">  
+						                  Motocicletas
+						                </a>  
+					            </div>  
+				            	<div id="collapseOne" class="accordion-body collapse" style="height: 0px; ">  
+					                <div class="accordion-inner">  
+						                <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">Motores</a></br>
+						                <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">Pastas</a></br>	                
+										<a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">Motores</a></br>
+						                <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">Pastas</a>
+				                	</div>  
+			             		</div>  
+				            </div>  
+				            <div class="accordion-group">  
+				              	<div class="accordion-heading">  
+				                	<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">  
+				                 		Camiones
+				                	</a>  
+				              	</div>  
+				              	<div id="collapseTwo" class="accordion-body collapse">  
+					                <div class="accordion-inner">  
+						                <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">Motores</a></br>
+						                <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">Pastas</a></br>	                
+										<a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">Motores</a></br>
+						                <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">Pastas</a>				                  	
+					                </div>  
+				              	</div>  
+				            </div>  
+				            <div class="accordion-group">  
+				              	<div class="accordion-heading">  
+				                	<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">  
+				                  		Volquetas
+				                	</a>  
+				              	</div>  
+				              	<div id="collapseThree" class="accordion-body collapse">  
+					                <div class="accordion-inner">  
+						                <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">Motores</a></br>
+						                <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">Pastas</a></br>	                
+										<a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">Motores</a></br>
+						                <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">Pastas</a>	
+					                </div>  
+				              	</div>  
+				            </div>  
+
+				            <div class="accordion-group">  
+				              	<div class="accordion-heading">  
+				                	<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">  
+				                  		Retro escabadoras
+				                	</a>  
+				              	</div>  
+				              	<div id="collapseFour" class="accordion-body collapse">  
+					                <div class="accordion-inner">  
+						                <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">Motores</a></br>
+						                <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">Pastas</a></br>	                
+										<a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">Motores</a></br>
+						                <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">Pastas</a>	
+					                </div>  
+				              	</div>  
+				            </div>  
+
+				            <div class="accordion-group">  
+				              	<div class="accordion-heading">  
+				                	<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive">  
+				                  		Tracto Mulas
+				                	</a>  
+				              	</div>  
+				              	<div id="collapseFive" class="accordion-body collapse">  
+					                <div class="accordion-inner">  
+						                <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">Motores</a></br>
+						                <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">Pastas</a></br>	                
+										<a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">Motores</a></br>
+						                <a data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">Pastas</a>	
+					                </div>  
+				              	</div>  
+				            </div>  		            
+				        </div>
+					</div>				
+					<%= yield %>
+					
+				</div>
+			</div>
+
+
+		</div> <!-- /container -->
+	</div>
+
+	<footer>
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div class="span12">
+					<div class="row-fluid">
+						<div class="span6">
+							<p class="color_p2">&copy; Company 2012</p>
+						</div>
+						<div class="span6">
+							<p class="color_p3">&copy; Company 2012</p>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+	</footer>	
+
+
+    <script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/jquery.js"></script>  
+    <script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-collapse.js"></script> 
+
+</body>
+</html>
