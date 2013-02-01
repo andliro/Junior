@@ -1,19 +1,8 @@
 /* --------------------DISEÑO INDEX-------------------- */
-.carousel .item {
-    background-color: #000;
-}
-
 .ferro{
 	margin-top: 20px;
 	/* background: red; 	*/
 	/* border: 2px solid; */
-}
-
-.carrusel_publicidad{	
-	background-color: #fff;
-	/*border: 1px blue solid;	*/
-	width: 100%;
-	/*height: 100%;*/
 }
 
 .mas_contenido{
@@ -25,18 +14,72 @@
 	height: 900px;		
 	/*border: 2px solid;*/
 }
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+
+
+/* CARRUSEL PRINCIPAL*/
+	.carrusel_publicidad .item{
+	    border: 2px solid purp;
+	     margin-left: 120px;
+	}	
+
+/* Media Queries CARRUSEL PRINCIPAL
+********************** */
+@media screen and (max-width: 960px) {
+	.carrusel_publicidad .item{
+	    margin-left: 0px;
+	}		
+}
+@media screen and (max-width: 768px) {
+	.carrusel_publicidad .item{
+        margin-left: 0px;
+	}			
+}
+
+/* Media Queries FERROCARIL
+********************** */
+@media screen and (max-width: 500px) {
+  	#foo .ima{
+  		width: 100px;
+		height: 100px;
+	}	 
+} 
+
 /* 
-.mas_contenido h1{
-	font-size: 100px;
+Media Queries CARRUSEL PRINCIPAL
+**********************
+@media screen and (max-width: 960px) {
+	.carrusel_publicidad{
+		height: 400px;
+		border: 2px solid blue;				
+	}	
+	.carrusel_publicidad img{
+	    border: 2px solid red;
+	    margin-left: 0px;
+	}		
+}
+@media screen and (max-width: 768px) {
+	.carrusel_publicidad{
+		height: 320px;		
+	}
+	.carrusel_publicidad img{
+	    border: 2px solid yellow;
+        margin-left: 0px;
+	}			
+}
+@media screen and (max-width: 500px) {
+ 	.carrusel_publicidad {
+	height: 150px;
+	}	
 }
 
-.mas_contenido p{
-	font-size: 80px;
-	margin-top: 50px;
-	margin-bottom: 80px;
-}
- */
- /*.span10{
-
- 	border: 1px red solid;
- }*/
+Media Queries FERROCARIL
+**********************
+@media screen and (max-width: 500px) {
+  	#foo img{
+  		width: 100px;
+		height: 100px;
+	}	 
+} */

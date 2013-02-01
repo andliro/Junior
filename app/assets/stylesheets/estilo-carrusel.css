@@ -1,0 +1,103 @@
+.carousel_index {
+	margin: 0 0 30px 30px;
+	width: 100%;
+	border: 1px solid #ddd; 
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.carousel_index.responsive {
+	width: auto;
+	margin-left: 0;
+}
+.carousel_index img {
+ 	/* width: 870px;
+ 		height: 400px;	 */
+/* 	width: 400px;
+height: 100px; */
+	margin: 8px;	
+} 	 
+.prev {
+	float: left;
+	margin-left: 10px;	
+}
+.next {
+	float: right;
+	margin-right: 10px;
+}
+a.prev, a.next {
+	background: url(img/miscellaneous_sprite.png) no-repeat transparent;
+	width: 45px;
+	height: 50px;
+	display: block;
+	position: static;
+	/* position: absolute; */	
+	margin-top: 120px;
+}
+a.prev {			float: right;					
+					background-position: 0 0; }
+a.prev:hover {		background-position: 0 -50px; }
+a.prev.disabled {	background-position: 0 -100px !important;  }
+
+a.next {			float: left;					
+					background-position: -50px 0; }
+a.next:hover {		background-position: -50px -50px; }
+a.next.disabled {	background-position: -50px -100px !important;  }
+a.prev.disabled, a.next.disabled {
+	cursor: default;
+}
+
+a.prev span, a.next span {
+	display: none;
+}
+
+.paginas {
+	float: left;
+	width: 300px;
+	text-align: center;
+	/* border: 2px solid green; */				
+}
+.paginas a {
+	background: url(img/miscellaneous_sprite.png) 0 -300px no-repeat transparent;
+	width: 15px;
+	height: 15px;
+	margin: 0 5px 0 0;
+	display: inline-block;
+}
+.paginas a.selected {
+	background-position: -25px -300px;
+	cursor: default;
+}
+.paginas a span {
+	display: none;
+} 
+
+.clearfix {
+	float: none;
+	clear: both;
+}
+
+.ferro-titulo
+{		/*diseño del titulo*/
+	width: auto;
+	height: 25px;	
+	color: #7A7677;
+	font-weight: bold;	
+	font-size: 30px;	
+	padding-top: 10px;
+	/* display:block; */		
+	text-align: center;
+	/* border: 1px solid green; */
+}
+.ferro-text
+{		/*diseño del texto*/
+	width: auto;
+	height: 60px;		
+	color: #7A7677;
+	font-weight: bold;
+	font-size: 15px;	
+	padding: 0px 5px 0px 5px;
+	text-align: left;
+ 	display:block; 	
+	/* border: 1px solid green; */
+}

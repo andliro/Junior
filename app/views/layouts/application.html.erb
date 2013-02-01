@@ -2,21 +2,11 @@
 <html>
 <head>
   <title>Junior</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag    "application", :media => "all" %>  
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 
-  <script type="text/javascript">
-        $(document).ready(function() {
-            $('#carouselh').jsCarousel({ onthumbnailclick: function(src) { alert(src); }, autoscroll: true, circular: true, masked: false, itemstodisplay: 4, orientation: 'h' });
-        });               
-    </script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#micarouselh').jsCarousel({ onthumbnailclick: function(src) { alert(src); }, autoscroll: true, circular: true, masked: false, itemstodisplay: 4, orientation: 'h' });
-        });               
-    </script>
-    
+
 </head>
 <body>
 <div class="header">
@@ -55,7 +45,6 @@
 	<div class="contenido">
 
 		<div class="container-fluid">
-
 
 			<div class="row-fluid">			
 				<div class="span12">
@@ -141,13 +130,12 @@
 				              	</div>  
 				            </div>  		            
 				        </div>
-					</div>				
+					</div>	
+				
 					<%= yield %>
-					
+
 				</div>
 			</div>
-
-
 		</div> <!-- /container -->
 	</div>
 
@@ -170,7 +158,35 @@
 
 
     <script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/jquery.js"></script>  
-    <script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-collapse.js"></script> 
+    <script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-collapse.js"></script>
+
+	<script type="text/javascript">
+		 $(function() {
+		     //  Responsive layout, resizing the items
+		     $('#foo').carouFredSel({
+		         //auto: false,
+		         responsive: true,
+		         prev: '#prev',
+		         next: '#next',                  
+		         //width: '100%',                    
+		         pagination: "#paginas",
+		         mousewheel: true,
+		         swipe: {
+		             onMouse: true,
+		             onTouch: true
+		         },
+		         scroll: 2,
+		         items: {
+		             width: 400,
+		             //height: '30%',    //  optionally resize item-height
+		             visible: {
+		                 min: 1,
+		                 max: 6                            
+		             }
+		         }
+		     });
+		  });
+</script>
 
 </body>
 </html>
